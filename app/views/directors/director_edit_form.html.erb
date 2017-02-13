@@ -1,0 +1,21 @@
+<a href="/directors">Directors</a>
+<a href="/actors">Actors</a>
+<a href="/movies">Movies</a>
+
+<h1> Edit <%=@director.name%> </h1>
+
+<form action="http://localhost:3000/update_director/<%=@director.id%>">
+  <label>Name</label>
+  <input type="text" name="name" value="<%=@director.name%>" id="Name">
+
+  <label>Image URL</label>
+  <input type="text" name="image_url" value="<%=@director.image_url%>" id="Image URL">
+
+  <label>Birthday</label>
+  <input type="text" name="dob" value="<%=@director.dob%>" id="DOB">
+
+  <label>Biography</label>
+  <input type="text" name="bio" value="<%=@director.bio%>" id="Bio">
+
+  <button>Update Director</button>
+</form>

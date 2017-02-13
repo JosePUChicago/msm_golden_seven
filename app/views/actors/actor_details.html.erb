@@ -1,0 +1,19 @@
+<a href="/directors/">Directors</a>
+<a href="/actors/">Actors</a>
+<a href="/movies/">Movies</a>
+
+<h1>Actor Details</h1>
+<h2> <%=@actor.name%> </h2>
+
+<img src="<%=@actor.image_url%>" width= "400">
+
+<p>
+  Birthday: <%=@actor.dob%>
+</p>
+<p>
+  <%=@actor.bio%>
+</p>
+
+<a href="http://localhost:3000/actors">Back</a>
+<a href="http://localhost:3000/actors/<%=@actor.id%>/edit">Edit</a>
+<a href="http://localhost:3000/delete_actor/<%=@actor.id%>">Delete</a>
